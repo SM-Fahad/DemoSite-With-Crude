@@ -1,0 +1,46 @@
+<div class="signup-page">
+  <div class="signup-container">
+    <h1>Zay Sign Up</h1>
+
+    <form #signupForm="ngForm">
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" ngModel required />
+      </div>
+
+      <!-- Email or Phone -->
+      <div class="form-group">
+        <label for="emailPhone">Email or Phone</label>
+        <input type="text" id="emailPhone" name="emailPhone" ngModel required />
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" ngModel required />
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          ngModel
+          required
+        />
+      </div>
+
+      <!-- Sign Up Button -->
+      <button type="submit" class="btn">Sign Up</button>
+
+      <!-- Login Link -->
+      <p class="login-text">
+        Already have an account?
+        <a routerLink="/login">Login</a>
+      </p>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f3f4f6; // Tailwind's gray-100
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem; // Tailwind rounded-2xl
+  padding: 2rem;
+  width: 100%;
+  max-width: 28rem; // Tailwind max-w-md
+  text-align: center;
+
+  h1 {
+    font-size: 1.875rem; // Tailwind text-3xl
+    font-weight: bold;
+    margin-bottom: 1.5rem; // Tailwind mb-6
+  }
+
+  form {
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        font-weight: 500; // Tailwind font-medium
+        color: #374151; // Tailwind gray-700
+        margin-bottom: 0.5rem;
+        text-align: left;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: 1px solid #d1d5db; // Tailwind gray-300
+        border-radius: 0.5rem; // Tailwind rounded-lg
+        outline: none;
+        transition: 0.2s ease;
+
+        &:focus {
+          border-color: #60a5fa; // Tailwind blue-400
+          box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      background: #3b82f6; // Tailwind blue-500
+      color: #fff;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #2563eb; // Tailwind blue-600
+      }
+    }
+
+    .signup-text {
+      margin-top: 1rem;
+      font-size: 0.875rem; // Tailwind text-sm
+      color: #4b5563; // Tailwind gray-600
+
+      a {
+        color: #3b82f6;
+        text-decoration: none;
+        transition: text-decoration 0.2s;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
